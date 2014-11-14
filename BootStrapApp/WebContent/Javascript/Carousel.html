@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/BootStrapApp/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="/BootStrapApp/bootstrap/js/jquery-2.1.1.js"></script>
+<script src="/BootStrapApp/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="span10">
+			<div class="carousel slide" id="theCarousel">
+				<!-- 오른쪽 상단 : 해당 슬라이드 바로 가기 -->
+				<ol class="carousel-indicators">
+					<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#theCarousel" data-slide-to="1"></li>
+					<li data-target="#theCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="http://lorempixel.com/640/480/animals/"	/>
+						<div class="carousel-caption">
+							<h4>제목</h4>
+							<p>간단한 설명들...</p>
+						</div>
+						</div>
+					<div class="item">
+						<img src="http://lorempixel.com/640/480/food/"	/>
+						<div class="carousel-caption">
+							<h4>제목</h4>
+							<p>간단한 설명들...</p>
+						</div>
+						</div>
+					<div class="item">
+						<img src="http://lorempixel.com/640/480/nightlife/"	/>
+						<div class="carousel-caption">
+							<h4>제목</h4>
+							<p>간단한 설명들...</p>
+						</div>
+						</div>
+				</div>
+			<!-- 좌우 화살표로 슬라이드 이동 -->
+			<a href="#theCarousel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+			<a href="#theCarousel" class="carousel-control right" data-slide="next">&rsaquo;</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/BootStrapApp/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="/BootStrapApp/bootstrap/js/jquery-2.1.1.js"></script>
+<script src="/BootStrapApp/bootstrap/js/bootstrap.js"></script>
+</head>
+<!-- 
+	Class="modal"
+	Class="modal-header"
+	Class="modal-body"
+	Class="modal-footer"
+ -->
+<body>
+<div class="container">
+	<div class="row-fluid">
+		<div class="span10">
+		<!-- 디자인을 위한 부분
+			<div class="modal">
+				<div class="modal-header">
+					<a href="#" class="close">&times;</a>
+					<h3>모달 헤더</h3>
+				</div>
+				<div class="modal-body">
+					<p>본문 영역...</p>
+					<p>본문 영역...</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary">닫기</button>
+				</div>
+			</div>
+			 -->
+			 
+		<div class="modal hide fade" id="theModal">		<!-- 처음엔 안 보이게 -->
+				<div class="modal-header">
+					<a href="#" class="close" data-dismiss="modal">&times;</a>
+					<h3>모달 헤더</h3>
+				</div>
+				<div class="modal-body">
+					<p>본문 영역...</p>
+					<p>본문 영역...</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary" data-dismiss="modal">닫기</button>
+				</div>
+			</div>
+			<a href="#theModal" class="btn" data-toggle="modal">모달창 열기</a>
+			<!-- 그냥 버튼에도 적용 -->
+			<input type="button" name="btnOpen" value="열기"
+				data-toggle="modal" data-target="#theModal"	/>
+			<input type="button" id="btnOpenDialog" value="열기"	/>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(
+			function(){
+				$("#btnOpenDialog").click(
+						function(){
+							$("#theModal").modal();
+						}
+				);
+			}
+	);
+</script>
+</body>
+</html>

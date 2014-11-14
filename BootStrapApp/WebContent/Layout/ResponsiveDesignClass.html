@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="/BootStrapApp/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+<style>
+	[class*="span"]{
+		background-color:gray;
+		text-align:center;
+		margin-top:10px
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="span4">1영역</div>
+		<div class="span4">2영역</div>
+		<div class="span4">
+			<div class="visible-desktop">
+				데스크 탑 환경에서만 보여짐.
+			</div>
+			<div class="visible-phone">
+				휴대폰 환경에서만 보여짐.
+			</div>
+			<div class="visible-tablet">
+				태블릿 환경에서만 보여짐.
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

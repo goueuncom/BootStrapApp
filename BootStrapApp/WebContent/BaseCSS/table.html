@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.css" rel="stylesheet">
+<style>
+.table-hover tbody tr:hover > td,
+.table-hover tbody tr:hover > th {
+  background-color: yellow;		/* 수정 */
+}
+.table-striped tbody > tr:nth-child(odd) > td,
+.table-striped tbody > tr:nth-child(odd) > th {
+  background-color: lightblue;
+}
+</style>
+</head>
+<body>
+<!-- 
+hover : 마우스 댔을 때 반응
+condensed : 셀 내용과 셀 사이의 간격(셀 패딩)을 줄여 준다
+striped : 줄끼리 구분 쉽게
+ -->
+ <div class="span12">
+<table class="table table-bordered table-hover table-condensed table-striped">
+	<caption>강의 리스트</caption>
+	<thread>
+		<tr>
+			<th>구분</th><th>제목</th>
+		</tr>
+	</thread>
+	<tbody>
+		<tr><td>프로그래밍 언어</td><td>C 언어</td></tr>
+		<tr><td>프로그래밍 언어</td><td>C++ 언어</td></tr>
+		<tr><td>프로그래밍 언어</td><td>JAVA 언어</td></tr>
+		<tr><td>프로그래밍 언어</td><td>C# 언어</td></tr>
+	</tbody>
+</div>
+</table>
+</body>
+</html>

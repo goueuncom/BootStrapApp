@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<div class="containter">
+	<div class="row">
+		<div class="span12">
+		<h2>기본 폼</h2>
+			<form>
+				<fieldset>
+					<legend>범례</legend>
+					<label>라벨</label>
+					<input type="text" placeholder="플레이스 홀더"	/>
+					<span class="help-block">샘플 도움말 텍스트</span>
+					<label class="checkbox">
+						<input type="checkbox"	/>체크박스
+					</label>
+					<button type="submit" class="btn">전송 버튼</button>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+
+	<div class="row">
+		<div class="span12">
+		<h2>폼 레이아웃 옵션</h2>
+		<h3>1. 검색 폼</h3>
+			<form class="form-search">
+				<input type="text" name="txt" value=""	class="input-medium search-query"	/>
+				<input type="submit" name="smt" value="검색" class="btn"	/>
+			</form>
+			
+		<h3>2. 인라인 폼</h3>
+		<form class="form-inline">	<!-- 연관된 객체들을 하나(한 줄)로 묶음 -->
+			<input type="text" name="email" value="" placeholder="이메일"/>
+			<input type="password" name="pwd" placeholder="암호"	/>
+			<label class="checkbox"><input type="checkbox" name="chk" value=""	/>체크박스</label>
+		</form>
+		
+		<h3>3. 수평 폼</h3>
+		<!-- form-horizontal with control-group, control-label, controls -->
+		<form class="form-horizontal">
+			<div class="control-group">
+				<label class="control-label">이메일</label>
+				<div class="controls">
+					<input type="text" name="txtEmail" value="" placeholder="이메일"	/>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">암호</label>
+				<div class="controls">
+					<input type="password" name="txtPwd" value="" placeholder="암호"	/>
+				</div>
+			</div>
+			<div class="control-group">
+				<div class="controls">
+					<label class="checkbox">
+						<input type="checkbox" name="chk" value=""	/>체크박스
+					</label>
+					<input type="submit" value="로그인"	/>
+				</div>
+			</div>
+		</form>
+		</div>
+	</div>
+</body>
+</html>

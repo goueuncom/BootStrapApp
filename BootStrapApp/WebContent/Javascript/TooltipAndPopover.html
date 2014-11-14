@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/BootStrapApp/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="/BootStrapApp/bootstrap/js/jquery-2.1.1.js"></script>
+<script src="/BootStrapApp/bootstrap/js/bootstrap.js"></script>
+<style>
+	body{margin-top:30px}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<a href="#" title="툴팁 : 풍선 도움말">툴팁</a>
+			<a href="#"
+				id="theTooltip" data-toggle="tooltip"
+				data-placement="right"
+				data-animation="false"
+				data-title="제목">툴팁</a>
+			<br/><br/>
+			<a href="#" title="툴팁 : 풍선 도움말1" rel="tooltip">툴팁</a>
+			<a href="#" title="툴팁 : 풍선 도움말2" rel="tooltip">툴팁</a>
+			<hr/>
+			
+			<a href="#" id="thePopover"
+				data-toggle="popover"
+				title="제목 부분"
+				data-content="내용<hr/>부분...">팝 오버</a>
+				<br/><br/>
+				<a href="#" title="팝오버" rel="popover" data-content="내용1">팝 오버1</a>
+				<a href="#" title="팝오버" rel="popover" data-content="내용2">팝 오버2</a>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(
+			function(){
+				$("#theTooltip").tooltip();
+				$("a[rel='tooltip']").tooltip({placement:"right"});
+				
+				$("#thePopover").popover({html:true});	// html태그(<hr/>) 실제로 동작하게 된다.
+				$("a[rel='popover']").popover({placement:"bottom"});
+			}
+	);
+</script>
+</body>
+</html>

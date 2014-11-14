@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<h3>체크박스</h3>
+<label class="checkbox inline"><input type="checkbox" checked="checked"	/>체크박스1</label>
+<label class="checkbox inline"><input type="checkbox"	/>체크박스2</label>
+<label class="checkbox inline"><input type="checkbox"	/>체크박스3</label>
+
+<h3>도움말</h3>
+<input type="text"	/><span class="help-line">인라인 도움말</span><br/>
+<input type="text"	/><span class="help-block">블럭단위 도움말</span>
+</body>
+
+<h3>유효성 검사</h3>
+<form>
+	<input type="email" required="required"	/>
+	<input type="submit" value="전송"	/>
+</form>
+
+<h3>편집 불가</h3>
+<input type="text" value="편집 불가능한 컨트롤"	
+	disabled="disabled" class="uneditable-input"/>	<!-- ? uneditable-input의 기능은? -->
+<input type="text" value="편집 불가능한 컨트롤"	
+	class="uneditable-input"/>							<!-- 이렇게 써야 하는구나 -->
+</html>

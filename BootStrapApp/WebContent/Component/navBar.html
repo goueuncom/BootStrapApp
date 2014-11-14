@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link href="/BootStrapApp/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link href="/BootStrapApp/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<script src="/BootStrapApp/bootstrap/js/jquery-2.1.1.js"></script>
+<script src="/BootStrapApp/bootstrap/js/bootstrap.js"></script>
+<style>
+	body{margin-top:50px}		// 고정된 네브바에 다른 네브바와 내용이 가려지지 않게
+</style>
+</head>
+<body>
+<nav class="navbar navbar-fixed-top navbar-inverse">	<!-- 가로 바로 만들기 -->
+	<div class="navbar-inner">	<!-- 아래 객체들을 네브바 안 쪽에 붙이겠다 -->
+		<a href="#" class="brand">L3</a>
+		<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"	>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>	<!-- 3줄 아이콘 -->
+		</a>
+		<div class="nav-collapse collapse">	<!-- 화면이 축소될 때 내용 감추기 -->
+			<ul class="nav">
+				<li><a href="#">Home</a></li>
+				<li class="divider-vertical"></li>	<!-- 구분선 : 수직 나누기 -->
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">
+						즐겨 찾기<i class="caret"></i></a>
+					<ul class="dropdown-menu">
+						<li><a href="" data-toggel="tab">게시판</a></li>
+						<li><a href="" data-toggel="tab">쇼핑몰</a></li>
+						<li><a href="" data-toggel="tab">커뮤니티</a></li>
+						<li><a href="" data-toggel="tab">기타</a></li>
+					</ul>
+				</li>
+			</ul>
+			<form class="navbar-form pull-right">
+				<input type="text" name="txtSearch" value=""	/>
+				<input type="submit" name="btnSubmit" value="검색"	/>
+			</form>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="span9">
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+			내용 들어오는 곳...<br/><br/>
+		</div>
+		<div class="span3">
+			<ul class="span2 nav nav-list">
+				<li clss="nav-header">메뉴 선택1</li>
+				<li class="active"><a href="#">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+				<li class="divider"></li>
+				<li class="nav-header">메뉴 선택2</li>
+				<li class="active"><a href="">Home</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
